@@ -66,6 +66,11 @@ header div.buscador i {
     width: 100%;  
 }
 
+body header div .logo-mercadoLiebre,.buscador {
+    
+    display: flex;
+}  
+
 /*---------styles del header (fin)--------*/
 
 /*---------styles del burger (inicio)--------*/
@@ -257,9 +262,8 @@ footer {
     .logo-mercadoLiebre {
         display: flex;
         align-content: center;
-        padding: 15px 15px;
-        width: 50%;    
-        height: 100%;   
+        padding: 5px 5px;
+        width: 50%;     
     }
 
     main section div.productos {
@@ -271,7 +275,8 @@ footer {
 
     main section div.productos article {
          width: 45%;
-    }    
+    }
+      
 }
 
 @media (min-width: 769px) {
@@ -314,8 +319,18 @@ footer {
 
 /*---------styles del login (inicio)--------*/
 
-.usuario-login {
+.altausuario-login div input{
     width: 60%;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.altausuario-login {
+    padding: 10px;
+}
+
+.usuario-login {    
+    width: 100%;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
@@ -323,11 +338,11 @@ footer {
     display: flex;  
     padding: 7px;
     font-size: 15px;
-    height: 4em;
+    height: 3em;
 }
 
 .password-login {
-    width: 60%;
+    width: 100%;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
@@ -335,7 +350,7 @@ footer {
     display: flex;  
     padding: 7px;
     font-size: 15px;
-    height: 4em;
+    height: 3em;
 }
 
 .boton-login {
@@ -348,7 +363,6 @@ footer {
     width: 60%;
     position: relative;
     left: 20%;
-    
 }
 
 .boton-login:hover {
