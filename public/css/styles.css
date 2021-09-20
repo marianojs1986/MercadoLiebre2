@@ -13,6 +13,7 @@ body {
 
 header {
     background-color: #EAC926;
+    width: 100%;
 }
 
 header nav {
@@ -37,10 +38,10 @@ header ul li a {
 }
 
 .buscador {    
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 15px;
     align-self: center;
   }
 
@@ -67,7 +68,6 @@ header div.buscador i {
 }
 
 body header div .logo-mercadoLiebre,.buscador {
-    
     display: flex;
 }  
 
@@ -233,7 +233,7 @@ footer {
     
 /*---------styles del media query (inicio)--------*/
 
-@media (min-width: 361px) {
+@media (min-width: 500px) {
     .descripciones-estilo {
         display:block;
     }
@@ -379,20 +379,16 @@ footer {
 }
 
 .nombreApellido,.nombreDeUsuario,.correoelectronico,.fechaNacimiento,.domicilio,.perfilUsuario,.interesesregister,.fotoDePerfil,.contraseñaregister {
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.interesesregister {
-    display: block;
-    display: flex;
-    flex-flow: column;
+    padding: 15px 10px;
+    width: 45%;
+    border-radius: 5px;
+    display: flex; 
+    flex-direction: column; 
 }
 
 .contraseñaregister i{
     width: 45%;
     display: flex;
-    padding-bottom: 5px;
 }
 
 .boton-register-submit,.boton-register-reset{
