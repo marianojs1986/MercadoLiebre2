@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------styles del header (inicio)--------*/
+
+header {
+    background-color: #EAC926;
+}
+
+header nav {
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+header ul {
+    margin-top: 10px;
+}
+  
+header ul li {
+   list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.buscador {    
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: center;
+  }
+
+header div.buscador i {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.logo-mercadoLiebre {
+    width: 50%;
+    padding: 10px;
+}
+
+.compra {
+    text-align: center;
+    font-size: 100%;
+    align-self: center;
+}
+
+.main-header-top-bar{
+    width: 100%;  
+}
+
+/*---------styles del header (fin)--------*/
+
+/*---------styles del burger (inicio)--------*/
+
+.burger-menu i{
+    background: #1259c3;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex; 
+}
+
+.burger-menu {
+    padding: 10px;
+}
+
+/*---------styles del burger (fin)--------*/
+
+/*---------styles del main (inicio)----------------*/
+
+p {
+    font-size: 12px;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
+
+main section {
+    width: 90%;
+    margin: auto;
+}
+
+main section article {    
+    margin-top: 10px;
+}
+
+.precios {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5px;
+    width: 30%;
+    display: inline-block;
+    width: 40%;
+}
+
+.descuentos {
+    font-size: 16px;
+    text-align: left;
+    color: #39b54a;
+    margin-top: 5px;
+    width: 70%;
+    display: inline-block;
+    width: 40%;
+}
+
+.descripciones {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 5px;
+    display: none;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100);
+}
+
+main section article:hover .descripciones {
+    display: block;
+}
+
+header div.buscador,.logo-mercadoLiebre {
+    display: flex;
+}
+
+/*---------styles del main (fin)----------------*/
+
+/*---------styles del camion y pie de articulo(inicio)----------------*/
+
+.contenedor-articulo {
+    border-top: 1px solid white;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+/*.circulo-icono {    
+    color: #39b54a;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}*/
+
+    
+main section article i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: -15px;
+    transition: 0ms;
+    }
+
+main section article i:hover {
+    transform: rotate(-90deg);
+    color: red;
+    border: 1px solid red;
+}
+
+/*---------styles del camion y pie de articulo (fin)----------------*/
+
+/*---------styles del footer (inicio)--------*/
+
+.footer-icons {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-icons:hover {
+    color: #39b54a;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+    margin-top: 20px;
+}
+
+.derechos {
+    font-size: 12px;
+}
+
+/*---------styles del login (footer)--------*/
+    
+/*---------styles del media query (inicio)--------*/
+
+@media (min-width: 361px) {
+    .descripciones-estilo {
+        display:block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb (150,150,150);
+    }
+
+    header nav {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .buscador {
+        width: 50%;
+        height: 50%;
+    }
+    
+    .main-header-top-bar {
+        display: flex;
+    }
+
+    .logo-mercadoLiebre {
+        display: flex;
+        align-content: center;
+        padding: 15px 15px;
+        width: 50%;    
+        height: 100%;   
+    }
+
+    main section div.productos {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: space-between;
+    }
+
+    main section div.productos article {
+         width: 45%;
+    }    
+}
+
+@media (min-width: 769px) {
+    .logo-mercadoLiebre,.buscador,.compra {
+        display: flex;
+        display: inline-block; 
+        width: 100%;
+        padding: 5px;
+    }
+
+    .main-header-bottom-bar {
+        display:flex;
+        justify-content: space-between;
+        padding: 10px 10px;  
+    }
+
+    .main-header-bottom-bar ul {
+        border-spacing: 5px;
+        display: flex;
+        padding: 10px 10px;  
+    }
+
+    .main-header-bottom-bar li {
+        display: flex;
+        padding: 10px 10px;  
+    }
+
+    main section div.productos article {
+        width: 23%;
+    }
+   
+    footer div.paga,footer div.envio,footer div.seguridad{
+        width: 33%;
+        display: flex;
+        display: inline-block;
+    }
+}
+
+/*---------styles del media query (fin)--------*/
+
+/*---------styles del login (inicio)--------*/
+
+.usuario-login {
+    width: 60%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 4em;
+}
+
+.password-login {
+    width: 60%;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;  
+    padding: 7px;
+    font-size: 15px;
+    height: 4em;
+}
+
+.boton-login {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    
+}
+
+.boton-login:hover {
+    background-color: #0022AA;
+    color: white;
+    font-weight: bold;
+}
+
+/*---------styles del login (fin)--------*/
+
+/*---------styles del register (inicio)--------*/
+.formulariocuenta {
+    padding: 20px 15px;  
+}
+
+.nombreApellido,.nombreDeUsuario,.correoelectronico,.fechaNacimiento,.domicilio,.perfilUsuario,.interesesregister,.fotoDePerfil,.contraseñaregister {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.interesesregister {
+    display: block;
+    display: flex;
+    flex-flow: column;
+}
+
+.contraseñaregister i{
+    width: 45%;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.boton-register-submit,.boton-register-reset{
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.boton-register-submit:hover {
+    background-color: #0022AA;
+    color: white;
+    font-weight: bold;
+}
+
+.boton-register-reset:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+/*---------styles del register (fin)--------*/
+
+
+ 
+
+
